@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+    <title>Nature Scavenger Hunt</title>
     <head>
+        <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <h1>Nature Scanvenger Hunt</h1>
-    
+        <div class="logo-countainer">
+     <img src="strawberry.jpg" alt="Website Logo" class="circle-logo-centered"> 
+     </div>
+     </header>
+     <img src="bottom-right-pic.jpg" alt="Bottom Right Image" class="standalone-bottom-image">
+     <!--First Box-->
+     <div class="checkbox-group">
+        <input type="checkbox" id="option1" name="choices" value="Saw Shiny Rock">
+        <label for="option1">White/Shiny Rock</label>
+     </div>
+     <!--Second Box-->
+     <div class="checkbox-group">
+        <input type="checkbox" id="option2" name="choices" value="Found 5 Swords">
+        <label for="option2">5 long sticks wothy of being swords</label>
+     </div>
+     <!--Third Box-->
+     <div class="checkbox-group">
+        <input type="checkbox" id="option3" name="choices" value="Alvin and the Chipmunks">
+        <label for="option3">3 squirrels</label>
+     </div>
+     <!--Bird Checkpoints-->
+     <div class="checkbox-group">
+        <input type="checkbox" id="option4" name="choices" value="Robin">
+        <label for="option4">2 Robins</label>
+     </div>
+     <div class="checkbox-group">
+        <input type="checkbox" id="option5" name="choices" value="Duck Duck Goose">
+        <label for="option5">3 Ducks 1 Goose</label>
+     </div>
+     <div class="checkbox-group">
+        <input type="checkbox" id="option6" name="choices" value="Free Birds">
+        <label for="option6">A Wild Turkey</label>
+     </div>
+     <div class="checkbox-group">
+        <input type="checkbox" id="option7" name="choices" value="How much wood could a woodchuck chuck??">
+        <label for="option7">A Woodpecker</label>
+     </div>
+     <!--No more birds-->
+     <div class="checkbox-group">
+        <input type="checkbox" id="option8" name="choices" value="Fly away my little akuma">
+        <label for="option8">A Butterfly</label>
+     </div>
+     <div class="checkbox-group">
+        <input type="checkbox" id="option9" name="choices" value="A Doe a female deer">
+        <lable for="option9">A Deer</label>
+     </div>
+     <div class="checkbox-group">
+        <input type="checkbox" id="option10" name="choices" value="Excellent Pizza Toppings">
+        <label for="option10">Mushrooms</label>
+     </div>
+     <div id="live-clock" class="bottom-right-clock">00:00:00 PM</div>
+     <!--Clock script-->
+     <script>
+        function updateClock() {
+            const clockElement = document.getElementById('live-clock');
+            const now = new Date();
+
+            let timeString = now.toLocaleTimeString();
+
+            clockElement.innerText = timeString;
+        }
+            updateClock();
+            setInterval(updateClock, 1000);
+        
+     </script>
+     </section>
     </body>
-    c:\Users\sandr\Downloads\strawberry.jpg
+    </html>
+
+   
